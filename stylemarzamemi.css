@@ -1,0 +1,1344 @@
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #004F9F;
+  color: #EDF7FD;
+}
+
+/* Font Styles */
+h1, h2, h3, .dm-serif-display-regular, .dm-serif-display-regular-italic {
+  font-family: 'DM Serif Display', serif;
+}
+
+.dm-serif-display-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-style: italic;
+}
+
+p, .split-text p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu */
+.menu {
+  background-color: #EDF7FD !important;
+  width: 100%;
+  padding: 15px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.menu nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu nav ul li a {
+  color: #1893d1 !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease;
+}
+
+.menu nav ul li a:hover {
+  color: #81C7EA !important;
+}
+
+/* Hero Header */
+h1 {
+  font-weight: 700 !important;
+  font-size: 10em !important;
+  color: #EDF7FD !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+p.montserrat-text {
+  font-size: 18px !important;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 40px auto 0;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  width: 80%;
+  max-width: 1000px;
+  text-shadow: 8px 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Background Link */
+#background-link {
+  display: block;
+  text-decoration: none;
+  height: 100vh;
+}
+
+/* Background Container */
+#background-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url('copertinamarza1.png');
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 20px;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#background-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+#background-container h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #EDF7FD;
+}
+
+#background-container p {
+  font-size: 1.5em;
+  color: #EDF7FD;
+}
+/* Banner Terra */
+.banner-terra {
+  font-family: "DM Serif Display", serif !important;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('culturamarza.jpg') center / cover no-repeat;
+}
+
+/* Contenuto del banner */
+.banner-content {
+  position: absolute;
+  top: 20px;
+  left: 10%; /* Sposta il contenuto un po' più a destra rispetto a prima */
+  transform: translateX(0); /* Elimina il traslato orizzontale */
+  z-index: 2;
+  text-align: left; /* Allinea il contenuto a sinistra */
+}
+
+/* Titolo "Terra" */
+.banner-terra .h2{
+  font-size: 120px !important;
+  margin: 0;
+  font-family: 'DM Serif Display', serif;
+  font-weight: bold;
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7); /* Ombra per migliorare la leggibilità */
+}
+
+/* Descrizione del banner - mantenere dimensione fissa e piccola */
+.banner-description {
+  position: absolute;
+  bottom: 30px; /* Posizionato più in basso */
+  left: 50%; /* Posizionamento centrale orizzontale */
+  transform: translateX(-50%); /* Centra esattamente la descrizione */
+  font-size: 1.2em; /* Più piccolo rispetto al titolo */
+  color: #EDF7FD;  /* Colore bianco per contrasto */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Ombra per visibilità */
+  font-weight: bold;
+  text-align: center;
+}
+/* Applica la dimensione del font all'elemento h2 nel banner */
+.banner-terra h2 {
+  font-size: 60px !important; /* Usa !important per garantire che questa regola venga applicata */
+}
+
+/* Se vuoi che il link dentro l'h2 abbia anche la dimensione di font corretta */
+.banner-terra h2 a {
+  font-size: inherit;  /* Il link eredita la dimensione del font dal suo elemento h2 */
+  color: #004f9f;  /* Imposta il colore del testo del link */
+  text-decoration: none;  /* Rimuovi la sottolineatura del link */
+}
+
+
+
+/* Balata Hero */
+#balata-fullscreen.hero-castello {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('balatasfumatura.png') center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  color: #EDF7FD;
+  box-sizing: border-box;
+}
+
+.hero-text-top {
+  position: absolute;
+  top: 180px;
+  left: 1100px;
+  max-width: 700px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title-bottom-left {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  text-align: left;
+  letter-spacing: -2px;
+}
+
+.hero-title-bottom-left h2 {
+  font-size: 140px;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-title-bottom-left span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Split Sections */
+.split-text h2 {
+  font-size: 54px;
+  color: #EDF7FD;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  line-height: 1.1;
+}
+
+.split-text p {
+  font-size: 18px;
+  color: #EDF7ED;
+  line-height: 1.7em;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.split-text,
+.split-image {
+  padding: 30px;
+}
+
+.split-image {
+  flex: 1;
+  width: 50%;
+  text-align: center;
+}
+
+.split-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.split-text.porta-spagnola {
+  margin-left: 100px;
+}
+
+.split-text.san-domenico {
+  margin-right: 100px;
+}
+
+.split-image.porta-spagnola {
+  margin-right: 150px;
+}
+
+.split-image.san-domenico {
+  margin-left: 150px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 6em !important;
+  }
+
+  .terra.title {
+    font-size: 10em;
+  }
+
+  .hero-title-bottom-left h2 {
+    font-size: 80px;
+  }
+
+  .banner-content {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .menu nav ul li a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  h1 {
+    font-size: 4em !important;
+  }
+
+  p.montserrat-text {
+    font-size: 16px !important;
+    padding: 0 10px;
+    width: 95%;
+  }
+
+  .terra.title {
+    font-size: 5em;
+  }
+
+  .banner-content {
+    top: 40px;
+  }
+
+  .banner-description {
+    font-size: 1.3em;
+    padding: 0 20px;
+  }
+
+  .split-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split-text {
+    padding-bottom: 20px;
+  }
+
+  .split-image {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title-bottom-left h2 {
+    font-size: 50px;
+  }
+
+  .hero-title-bottom-left .word {
+    width: 200px;
+  }
+
+  .hero-title-bottom-left {
+    left: 30px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu nav ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 2.5em !important;
+  }
+
+  p.montserrat-text {
+    font-size: 14px !important;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .terra.title {
+    font-size: 3em;
+  }
+
+  .banner-content {
+    top: 20px;
+  }
+
+  .banner-description {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+}
+
+/* Isolotto Brancati */
+.section-isolotto {
+  min-height: 80vh;
+  padding: 60px 20px;
+  background-color: #004F9F;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #EDF7FD;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Contenitore split (testo + immagine) */
+.section-isolotto .split-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Testo a sinistra */
+.section-isolotto .split-text {
+  flex: 0.9;
+  padding-left: 0;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.section-isolotto .split-text h2 {
+  font-size: 2.5rem;
+  margin: 0 0 40px 0;
+  font-family: "DM Serif Display", serif;
+  text-align: left;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.section-isolotto .split-text p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.8;
+  font-family: "Montserrat";
+}
+
+/* Immagine a destra */
+.section-isolotto .split-image {
+  flex: 1.1;
+  text-align: right;
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
+}
+
+.section-isolotto .split-img {
+  width: 110%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ✅ Responsive per mobile e tablet */
+@media screen and (max-width: 768px) {
+  .section-isolotto .split-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-isolotto .split-text,
+  .section-isolotto .split-image {
+    text-align: center;
+  }
+
+  .section-isolotto .split-text h2 {
+    font-size: 2rem;
+  }
+
+  .section-isolotto .split-text p {
+    font-size: 1.1rem;
+  }
+
+  .section-isolotto .split-image img {
+    width: 100%;
+  }
+}
+
+
+/* LE DUE CHIESE */
+
+.section-con-immagini {
+    padding: 60px 20px;
+    background-color: #004F9F;
+    background-image: url('path_to_your_image.jpg'); /* opzionale */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #EDF7FD;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* Testo in alto */
+.section-con-immagini .text-top {
+    max-width: 1200px; /* aumentato da 1000px */
+    margin: 0 auto 50px auto;
+}
+
+.section-con-immagini .text-top h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: "DM Serif Display", serif;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.section-con-immagini .text-top p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    margin: 0 auto;
+    max-width: 95%; /* aumentato da 85% */
+    font-family: "Montserrat";
+    text-align: left;
+    padding-left: 200px;
+}
+
+/* Contenitore delle immagini */
+.section-con-immagini .image-row {
+    display: flex;
+    gap: 80px; /* Maggiore distanza tra le immagini */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.section-con-immagini .image-row img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin: 0 20px; /* Aggiunge margine a sinistra e destra per distanziare ulteriormente */
+}
+
+
+/* Paragrafo sotto le immagini (se presente) */
+.section-con-immagini .text-below {
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-con-immagini .image-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-con-immagini .text-top h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-con-immagini .text-top p {
+        font-size: 1rem;
+        max-width: 95%;
+    }
+}
+
+/* Stile del banner Cultura con immagine di sfondo */
+.banner-cultura {
+    position: relative; /* Assicurati che il banner sia il contenitore di riferimento per il posizionamento assoluto */
+    height: 100vh; /* Imposta l'altezza a schermo intero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('Cine2.jpg');
+    background-size: cover; /* L'immagine coprirà l'intero banner */
+    background-position: center; /* Posiziona l'immagine al centro */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+}
+
+.banner-content {
+    position: absolute;
+    top: 20px; /* Puoi regolare questa distanza per alzare il titolo */
+    left: 15%; /* Posizionamento centrale orizzontale */
+    transform: translateX(-50%); /* Centra orizzontalmente */
+    z-index: 2; /* Assicurati che il titolo sia sopra all'immagine */
+}
+
+.cultura-title {
+    font-size: 60px; /* Grandezza del titolo */
+    color: #EDF7FD; /* Colore del testo (bianco chiaro per contrastare il blu) */
+    margin: 0;
+    font-family: 'DM Serif Display', serif; /* Font elegante */
+    text-align: center; /* Allinea il testo al centro */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Aggiungi ombra al testo per farlo risaltare */
+}
+
+/* Descrizione del banner - centrata in basso e spostata più al centro */
+.banner-description {
+    position: absolute;
+    bottom: 30px; /* Regola la distanza per posizionarlo più in alto o in basso */
+    left: 50%; /* Posizionamento centrale orizzontale */
+    transform: translateX(-50%); /* Centra esattamente la descrizione */
+    font-size: 2em;
+    color: #EDF7FD !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Ombra leggera per visibilità */
+    font-weight: bold; /* Rende il testo in grassetto */
+}
+
+ 
+/*Cultura*/
+/* Cinefest */
+.cinefest {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1893d1; /* Colore di sfondo, modificabile */
+    
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 6em !important; /* aumentato */
+    color: #edf7ed;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section-subtitle { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em !important;
+    color: #EDF7ED;
+    margin: 10px 0;
+    text-align: center;
+}
+.section-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10em!important;
+    color: #EDF7FD;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 50;
+    text-align: left;
+
+  }
+  .text-content {
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; /* Opzionale: angoli arrotondati */
+  }
+  .section-subtitle {
+    font-size: 1.5em;
+    color: #EDF7FD; /* Colore visibile sullo sfondo azzurro */
+    margin: 10px 0;
+  }
+
+  .cinefest .section-title,
+.cinefest .section-subtitle {
+    text-align: center;  /* Allinea il testo al centro */
+    margin: 0 auto;      /* Centra gli elementi */
+}
+
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .section-subtitle {
+      font-size: 1.2em;
+    }
+  }
+
+/* Responsività per dispositivi mobili */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5em; /* Ridotto il titolo per dispositivi mobili */
+    }
+
+    .section-description {
+        font-size: 1em; /* Ridotto il paragrafo per dispositivi mobili */
+    }
+}
+
+
+/* Stile per la sezione Tradizioni */
+.banner-tradizioni {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* La sezione occupa tutta l'altezza dello schermo */
+    background-image: url('LOGGIA DEGLI SCIERI.jpg'); /* Sostituisci con il percorso della tua immagine */
+    background-size: cover; /* L'immagine copre tutta la sezione */
+    background-position: center; /* Posiziona l'immagine al centro */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EDF7FD; /* Colore del testo bianco per contrasto */
+}
+
+/* Contenuto del banner */
+.banner-content {
+    text-align: center;
+    color: #EDF7FD; /* Colore del testo bianco */
+    max-width: 80%; /* Imposta una larghezza massima per il contenuto */
+    padding: 20px;
+}
+
+/* Titolo Tradizioni */
+.tradizioni-title {
+    font-size: 60px;
+    font-family: "DM Serif Display", serif;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Ombra per il titolo */
+    color: #fab53b;
+
+}
+
+/* Descrizione sotto il titolo nella sezione Tradizioni */
+#tradizioni .banner-description {
+    color: #fab53b !important; /* Colore giallo solo per il sottotitolo nella sezione Tradizioni */
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Ombra per la descrizione */
+}
+
+
+/* Responsività per dispositivi mobili */
+@media (max-width: 768px) {
+    .tradizioni-title {
+        font-size: 2.5em; /* Ridotto il titolo per dispositivi mobili */
+    }
+
+    .banner-description {
+        font-size: 1em; /* Ridotto il paragrafo per dispositivi mobili */
+    }
+}
+
+/* Stile per la sezione Tonno */
+.sezione {
+    background-color: #FAB53B; /* Colore di sfondo giallo */
+    padding: 80px 20px; /* Padding per dare spazio attorno al contenuto */
+    position: relative;
+    text-align: center; /* Allinea il testo al centro */
+}
+
+/* Contenitore principale */
+.contenuto {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titolo in basso a sinistra */
+.titolo {
+    position: absolute;
+    bottom: 20px; /* Posiziona il titolo in basso */
+    left: 10px; /* Spostato leggermente più a sinistra */
+    font-family: 'DM Serif Display', serif;
+    font-size: 5em; /* Dimensione grande del titolo */
+    color: #EDF7FD;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Testo in alto */
+.testo {
+    font-size: 1.4em;
+    color: #4C5052;
+    line-height: 1.6;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding-left: 200px;
+}
+
+/* Contenitore dell'immagine */
+.immagine {
+    margin-top: 70px;
+}
+
+/* Immagine al centro, con larghezza massima aumentata */
+.immagine img {
+    width: 60%;  /* Aumentato da 45% a 60% */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra l'immagine */
+}
+
+
+
+/* Sezione con sfondo giallo Impanata */
+.sezione-nuova {
+    background-color: #FAB53B;
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Titolo in alto a destra sovrapposto all'immagine */
+.titolo-nuovo {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 7em;
+    color: #EDF7FD;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    z-index: 2;
+}
+
+/* Contenuto della sezione */
+.contenuto-nuovo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Immagine centrata */
+.immagine-nuova {
+    max-width: 40%;
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra l'immagine */
+}
+
+/* Testo descrizione in basso */
+.descrizione-nuovo {
+    font-size: 1.4em;
+    color: #4C5052;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Tablet e dispositivi medi */
+@media (max-width: 991px) {
+    .titolo-nuovo {
+        font-size: 5em;
+        top: 20px;
+        right: 20px;
+    }
+
+    .immagine-nuova {
+        max-width: 60%;
+    }
+
+    .descrizione-nuovo {
+        font-size: 1.2em;
+    }
+}
+
+/* Smartphone e dispositivi piccoli */
+@media (max-width: 600px) {
+    .titolo-nuovo {
+        font-size: 3em;
+        top: 15px;
+        right: 15px;
+    }
+
+    .immagine-nuova {
+        max-width: 80%;
+    }
+
+    .descrizione-nuovo {
+        font-size: 1.1em;
+        width: 90%;
+    }
+
+    .contenuto-nuovo {
+        height: auto; /* Evita height fissa su schermi piccoli */
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+}
+
+
+/* IMPANATE */
+
+/* Sezione con sfondo giallo, foto al centro, titolo in alto a destra e testo in basso */
+.sezione-nuova {
+    background-color: #FAB53B; /* Colore di sfondo giallo */
+    position: relative;
+    padding: 80px 20px; /* Distanziamento dei contenuti */
+    text-align: center; /* Centra il testo */
+    overflow: hidden; /* Nasconde il contenuto che esce fuori */
+}
+
+/* Titolo in alto a destra */
+
+.titolo-nuovo {
+    position: absolute;
+    top: 20px;
+    right: 120px; /* Meno spazio dal bordo destro → più vicino all'immagine */
+    font-family: 'DM Serif Display', serif;
+    font-size: 7em;
+    color: #EDF7FD;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    z-index: 2;
+}
+
+/* Contenitore del contenuto */
+.contenuto-nuovo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aggiusta la posizione del testo in basso */
+    align-items: center;
+    height: 100%; /* Occupa l'intera altezza */
+}
+
+/* Immagine al centro */
+.immagine-nuova {
+    max-width: 45%; /* L'immagine occupa un massimo del 50% della larghezza */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centra l'immagine e aggiunge spazio sopra e sotto */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Aggiunge una leggera ombra all'immagine */
+}
+
+/* Descrizione del testo */
+.descrizione-nuovo {
+    font-size: 1.4em;
+    color:#4C5052;/* Colore del testo chiaro */
+    font-weight: normal;
+    line-height: 1.6;
+    margin-top: 20px; /* Distanziamento tra l'immagine e il testo */
+    width: 80%; /* Larghezza del testo, per mantenerlo leggibile */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif; /* Font Montserrat per il testo */
+      padding-left: 450px;
+}
+
+/* Stile per il footer */
+.footer {
+  background-color: #1893d1;
+  padding: 40px 0;
+  color: #EDF7FD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  border-top: 5px solid #1168bf; /* Linea sottile di separazione */
+}
+
+/* Contenitore delle due colonne */
+.footer-contenuto {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Comportamento responsive */
+  align-items: stretch; /* Allinea le colonne in alto */
+}
+
+/* Colonne singole */
+.footer-colonna {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra gli elementi all'interno della colonna */
+  justify-content: flex-start;
+  width: 45%;
+  text-align: left;
+  min-height: 350px; /* Altezza minima per evitare colonne troppo corte */
+}
+
+/* Titolo e logo */
+.header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra titolo e logo */
+  text-align: center;
+  margin-bottom: 40px; /* Spazio uniforme tra logo/titolo e contatti */
+}
+
+.header-block h3 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  margin: 0 0 10px 0; /* Rimuove margini laterali */
+  font-family: 'DM Serif Display', serif;
+}
+
+.header-block img {
+  display: block;
+  margin: 0 auto 40px auto; /* Centra orizzontalmente e lascia 40px di margine inferiore per separare il logo dai contatti */
+  width: 80px; /* Ridotto a 80px per uniformarlo */
+  height: auto;
+  margin-top: 10px; /* Elimina margini verticali e orizzontali */
+}
+
+/* Righe contatto (icona + testo) */
+.contact-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px; /* Distanza tra le righe di contatto */
+}
+
+/* Icone */
+.contact-item i {
+  font-size: 20px;
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Testo contatti */
+.contact-item span,
+.contact-item a {
+  font-size: 16px;
+  color: #EDF7FD;
+  text-decoration: none;
+  vertical-align: middle; /* Allineamento verticale */
+  display: inline-block;
+}
+
+/* Imposta lo stesso spazio tra logo/titolo e contatti per entrambe le colonne */
+.footer-colonna .header-block {
+  margin-bottom: 40px; /* Identico per entrambe */
+}
+
+/* Colonna Pro Loco Marzamemi */
+.footer-colonna:first-of-type {
+  margin-bottom: 0px; /* Nessuna distanza extra per Marzamemi */
+}
+
+/* Colonna Pro Loco Siracusa */
+.footer-colonna:last-of-type {
+  margin-top: 0px; /* Nessuna distanza extra per Siracusa */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Allinea verticalmente la colonna con Marzamemi */
+}
+
+/* Allineamento verticale dei contatti Marzamemi e Siracusa */
+.footer-colonna .contact-item {
+  margin-top: -5px; /* Rimuove margini extra tra i contatti */
+}
+
+/* Allineamento preciso per i contatti di Siracusa con quelli di Marzamemi */
+.footer-colonna:last-of-type .contact-item:first-of-type {
+  margin-top: -5px; /* Abbassa leggermente la prima riga dei contatti di Siracusa per allinearla con Marzamemi */
+}
+
+/* Centrare e abbassare entrambi i loghi (Marzamemi e Siracusa) */
+.footer-colonna .header-block img {
+  display: block;
+  margin: 0 auto 40px auto; /* Aggiusta la posizione del logo */
+  width: 80px;
+}
+
+/* Footer basso */
+.footer-basso {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.footer-basso p {
+  margin: 5px 0;
+}
+
+.footer-basso a {
+  color: #EDF7FD;
+  text-decoration: none;
+}
+
+.footer-basso a:hover {
+  text-decoration: underline;
+}
+
+.contact-item:hover {
+  opacity: 0.8; /* Aggiunge un effetto di opacità sui contatti quando ci si passa sopra */
+}
+
+
+
+
+
+/* Responsiveness: quando la larghezza della finestra è più piccola di 768px */
+@media (max-width: 768px) {
+  .footer-contenuto {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 20px;
+  }
+
+  .footer-colonna {
+      width: 100%; /* Le colonne occupano l'intera larghezza */
+      text-align: center;
+  }
+
+  .header-block img {
+      width: 80px; /* Riduce la larghezza dei loghi sui dispositivi mobili */
+  }
+
+  .contact-item {
+      max-width: 100%;
+      text-align: center;
+  }
+}
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .footer-contenuto {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .footer-colonna {
+        align-items: center;
+        width: 80%;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+}
+
+.sponsor-carousel {
+  overflow: hidden;
+  background-color: #1893d1;
+  padding: 30px 0;
+  text-align: center; /* Centra il contenuto incluso il titolo */
+}
+
+.sponsor-carousel h4 {
+  margin-bottom: 24px; /* Distanza sotto il titolo */
+  color: #EDF7FD; /* colore testo */
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem; /* Aumentato */
+}
+
+.sponsor-track {
+  display: flex;
+  animation: scroll-sponsors 25s linear infinite; /* durata aumentata da 12s a 30s per rallentare */
+  justify-content: center;
+}
+
+.sponsor-track a img {
+  height: 60px;
+  margin: 0 30px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.sponsor-track a:hover img {
+  opacity: 0.5;
+}
+
+@keyframes scroll-sponsors {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes scroll-sponsors {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Bottone */
+
+/* Stili per il bottone "Torna su" */
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px; /* Posizione del bottone in basso */
+    right: 20px;  /* Posizione del bottone a destra */
+    background-color: #edf7ed; /* Colore di sfondo del bottone */
+    color: #004F9F; /* Colore dell'icona */
+    border-radius: 50%; /* Bottone circolare */
+    padding: 10px; /* Distanza attorno all'icona */
+    opacity: 0; /* Il bottone sarà inizialmente invisibile */
+    transition: opacity 0.3s ease; /* Animazione per l'opacità */
+    z-index: 1000; /* Assicura che il bottone sia sopra altri elementi */
+    cursor: pointer; /* Cursore a forma di mano per indicare cliccabile */
+}
+
+/* Quando si scorre verso il basso e il bottone è visibile */
+.back-to-top.show {
+    opacity: 1; /* Il bottone diventa visibile */
+}
+
+/* Stile per l'icona della freccia */
+.back-to-top svg {
+    width: 24px; /* Dimensione dell'icona */
+    height: 24px;
+    fill: #81C7EA /* Colore dell'icona */
+}
+
+/* Cambia colore quando si passa sopra il bottone */
+.back-to-top:hover {
+    background-color: #81C7EA; /* Colore di hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
